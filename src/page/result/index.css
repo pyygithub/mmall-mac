@@ -1,0 +1,28 @@
+/**
+ * @Author: wolf
+ * @Date:	2017-08-06 17:30:57
+ * @Last Modified by:	wolf
+ * @Last Modified time:	2017-08-06 17:31:33
+ */
+
+.page-wrap{
+	background-color: #fff;
+	padding: 30px 0px;
+	margin-top: 20px;
+	text-align: center;
+}
+.result-con {
+	display: none;
+}
+.result-con .result-title{
+	color: #555;
+	margin-bottom:20px;
+}
+.result-con .reuslt-content{
+	margin-top: 20px;
+}
+.result-con .result-content .link{
+	margin: 0 5px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+}

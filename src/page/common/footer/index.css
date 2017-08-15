@@ -1,0 +1,52 @@
+/**
+ * @Author: wolf
+ * @Date:	2017-08-06 17:30:57
+ * @Last Modified by:	wolf
+ * @Last Modified time:	2017-08-06 17:31:33
+ */
+.footer{
+	padding: 20px 0;
+}
+
+.footer .links{
+	text-align: center;
+	color:#666;
+	line-height: 30px;
+}
+.footer .links .link-split{
+	color: #ccc;
+	margin:0 6px;
+}
+.footer .copyright-info .copyright{
+	color: #999;
+	line-height: 30px;
+}
+.footer .copyright_auth  .copyright_auth_ico{
+	overflow: hidden;
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url(../../../img/ico_footer.png);
+    text-indent: -999px;
+}
+.copyright_auth_ico_1 {
+    background-position: 0 -151px;
+}
+.copyright_auth_ico_2 {
+    background-position: -104px -151px;
+}
+.copyright_auth_ico_3 {
+    background-position: 0 -184px;
+}
+.copyright_auth_ico_4 {
+    background-position: -104px -184px;
+}
+.copyright_auth_ico_5 {
+    background-position: 0 -217px;
+}
+.copyright_auth_ico_6 {
+    background-position: -104px -217px;
+}
+

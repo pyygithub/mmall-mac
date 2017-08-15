@@ -1,0 +1,36 @@
+/**
+ * @Author: wolf
+ * @Date:	2017-08-06 17:30:57
+ * @Last Modified by:	wolf
+ * @Last Modified time:	2017-08-06 17:31:33
+ */
+
+/*通用头部导航样式*/
+.header .logo{
+	position:absolute;
+	left:60px;
+	top:37px;
+	display: block;
+	font-size: 36px;
+	color: #C60023;
+	font-weight: bold;
+	text-decoration: none;
+}
+.header .search-con{
+	padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+	width:550px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size:15px;
+	border:2px solid #C60023;
+	outline: none;
+}
+.header .search-con .search-btn{
+	position:absolute;
+	height: 44px;
+	width:80px;
+	cursor: pointer;
+}
