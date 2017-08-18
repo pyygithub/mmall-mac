@@ -1,0 +1,158 @@
+/**
+ * @Author: wolf
+ * @Date:	2017-08-06 17:30:57
+ * @Last Modified by:	wolf
+ * @Last Modified time:	2017-08-15 16:02:42
+ */
+
+.page-wrap{
+	background: #fff;
+}
+.page-wrap .w{
+	width: 1040px;
+	height: 475px;
+	margin: 0 auto;
+}
+.page-wrap .user-item-text{
+	font-size:16px;
+	color:#666;
+	font-weight: bold;
+	margin:10px;
+}
+/*步骤标题条*/
+.page-wrap .step-list{
+	width:640px;
+	text-align: center;
+	margin: 30px auto 70px;
+}
+.page-wrap .step-list dl{
+	position:relative;
+	float:left;
+	width:160px;
+	border-top:5px solid #ccc;
+}
+.page-wrap .step-list dl.active{
+	border-top-color:#7abd54;
+}
+.page-wrap .step-list dl.active .s-num{
+	background-color: #7abd54;
+}
+.page-wrap .step-list dl.active .s-text{
+	color:#7abd54;
+}
+.page-wrap .step-list dl .s-num{
+	position:relative;
+	top: -15px;
+    left: 50%;
+    margin-left:-11px;
+	width:23px;
+	height:23px;
+	border-radius: 50%;
+	background-color: #ccc;
+	color:#fff;
+	line-height: 23px;
+	font-size:14px;
+	font-weight: bold;
+}
+.page-wrap .step-list dl .s-text{
+	color:#ccc;
+	margin-top:-10px;
+}
+/*表单框*/
+.user-con{
+	width:400px;
+	background-color: #fff;
+	position: relative;
+	margin: 60px auto;
+}
+.user-con .user-title{
+	padding:10px 0px;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	font-weight: bold;
+	color:#666;
+}
+.user-con .user-box{
+	padding:20px;
+}
+
+/*错误提示框*/
+.user-con .user-box .error-item{
+	position:relative;
+	padding:4px 0 4px 40px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	color: red;
+	background-color: #fde9e9;
+	display: none;
+}
+/*错误图标*/
+.user-con .user-box .error-icon{
+	position:absolute;
+	left: 14px;
+	top: 50%;
+	font-size: 14px;
+	margin-top:-7px;
+}
+/*密码修改步骤*/
+.user-con .step-con{
+	display: none;
+}
+.user-con .step-con .success-text{
+	color:#7abd54;
+	font-size:20px;
+	font-weight: bold;
+	margin:10px 0px;
+	text-align: center;
+}
+.user-con .step-finish .link-item{
+	text-align: center;
+	color:#666;
+}
+.user-con .question-text{
+	font-size:14px;
+	color:#666;
+	margin:10px 0px;
+}
+
+.user-con .user-item{
+	position:relative;
+	margin-bottom: 20px;
+}
+.user-con .user-item .user-label{
+	position:absolute;
+	left:1px;
+	top:1px;
+	bottom:1px;
+	width: 40px;
+	line-height: 36px;
+	background-color: #f3f3f3;
+	font-size:18px;
+	color:#d3d3d3;
+	text-align: center;
+	border-right: 1px solid #dbdbdb;
+}
+.user-con .user-item .user-content{
+	padding: 10px 0 10px 50px; 
+	width:308px;
+	height:18px;
+	line-height: 18px;
+	font-size: 15px;
+	border: 1px solid #dbdbdb;
+	outline: none;
+}
+.user-con .btn-submit{
+	width:100%;
+	padding:2px 0;
+	text-align: center;
+	font-size:20px;
+}
+/*跳转链接*/
+.user-con .link-item{
+	text-align: right;
+	margin-top: 10px;
+}
+.user-con .link-item .link{
+	margin-left:10px;
+	color: #999;
+}

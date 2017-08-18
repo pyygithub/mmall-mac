@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%=htmlWebpackPlugin.options.title %> - happymall商城</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav-simple.html') %>
+		<div class="page-wrap">
+			<div class="w">
+				<p class="user-item-text">找回密码</p>
+				<div class="step-list">
+					<dl class="first-step active">
+						<dt class="s-num">1</dt>
+						<dd class="s-text">填写用户名</dd>
+					</dl>
+					<dl class="second-step">
+						<dt class="s-num">2</dt>
+						<dd class="s-text">验证身份</dd>
+					</dl>
+					<dl class="third-step">
+						<dt class="s-num">3</dt>
+						<dd class="s-text">设置新密码</dd>
+					</dl>
+					<dl class="finish-step">
+						<dt class="s-num"><i class="fa fa-check"></i></dt>
+						<dd class="s-text">完成</dd>
+					</dl>
+				</div>
+				<div class="user-con">
+					<div class="user-box">
+						<div class="error-item">
+							<i class="fa fa-minus-circle error-icon"></i>
+							<p class="error-msg">error</p>
+						</div>
+						<!--第一步-->
+						<div class="step-con step-username">
+							<div class="user-item">
+								<label for="username" class="user-label">
+									<i class="fa fa-user"></i>
+								</label>
+								<input type="text" class="user-content" id="username" name="username" placeholder="请输入用户" autocomplete="off"/>
+							</div>
+							<a href="javascript:;" class="btn btn-submit" id="submit-username">下一步</a>
+							<div class="link-item">
+								<a href="./user-login.html" target="_blank" class="link user-link">返回登录>></a>
+							</div>
+						</div>
+						<!--第二步-->
+						<div class="step-con step-answer">
+							<p class="question-text">密码提示问题是：<span class="question"></span></p>
+							<div class="user-item">
+								<label for="answer" class="user-label">
+									<i class="fa fa-key"></i>
+								</label>
+								<input type="text" class="user-content" id="answer" name="answer" placeholder="请输入密码提示问题答案" autocomplete="off"/>
+							</div>
+							<a href="javascript:;" class="btn btn-submit" id="submit-answer">下一步</a>
+							<div class="link-item">
+								<a href="./user-login.html" target="_blank" class="link user-link">返回登录>></a>
+							</div>
+						</div>
+						<!--第三步-->
+						<div class="step-con step-new-password">
+							<div class="user-item">
+								<label for="new-password" class="user-label">
+									<i class="fa fa-lock"></i>
+								</label>
+								<input type="password" class="user-content" id="new-password" name="new-password" placeholder="请输入新密码" autocomplete="off"/>
+							</div>
+							<div class="user-item">
+								<label for="new-password-confirm" class="user-label">
+									<i class="fa fa-lock"></i>
+								</label>
+								<input type="password" class="user-content" id="new-password-confirm" name="new-password-confirm" placeholder="确认新密码" autocomplete="off"/>
+							</div>
+							<a href="javascript:;" class="btn btn-submit" id="submit-new-password">下一步</a>
+							<div class="link-item">
+								<a href="./user-login.html" target="_blank" class="link user-link">返回登录>></a>
+							</div>
+						</div>
+						<!--第四步-->
+						<div class="step-con step-finish">
+							<p class="success-text"><i class="fa fa-check"></i> 新密码设置成功</p>
+							<div class="link-item">
+								请牢记您新设置的密码。<a href="./user-login.html" target="_blank" class="link user-link">返回登录</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

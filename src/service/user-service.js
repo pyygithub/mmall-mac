@@ -58,7 +58,7 @@ var _user = {
             data    : {
                 username : username
             },
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });

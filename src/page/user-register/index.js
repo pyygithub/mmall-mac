@@ -35,7 +35,7 @@ var page = {
 				return;
 			}
 			//异步验证用户名是否存在
-			_user.checkUsername(username,function(res){
+			_user.checkUsername(username,function(data,msg){
 				formError.hide();
 			},function(errMsg){
 				formError.show(errMsg);

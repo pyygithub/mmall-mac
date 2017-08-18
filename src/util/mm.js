@@ -8,10 +8,10 @@ var _mm = {
 	request : function(param){
 		var _this = this;
 		$.ajax({
-			type		: param.method	|| 'get',
+			type			: param.method	|| 'get',
 			url			: param.url 	|| '',
-			dataType	: param.type	|| 'json',
-			data		: param.data 	|| '',
+			dataType		: param.type	|| 'json',
+			data			: param.data 	|| '',
 			success		: function(res){
 				//请求成功
 				if(0 === res.status){
