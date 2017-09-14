@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%=htmlWebpackPlugin.options.title %> - happymall商城</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+		<div class="crumb">
+			<div class="w">
+				<div class="crumb-con">
+					<a href="javascript:;" class="link">MMall</a>
+					<span>></span>
+					<span class="link-text">修改个人信息</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<div class="content with-nav">
+				fsdf
+			</div>
+		</div>
+		
+		<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

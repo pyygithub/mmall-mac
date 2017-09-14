@@ -1,4 +1,155 @@
-body{
-	background-color: red;
-	background-image: url(../../img/test-img.jpg);
+/**
+ * @Author:  pyy
+ * @Description: 
+ * @Date:   2017/9/12 下午5:01
+ * @Last Modified by:
+ * @Last Modified time:  2017/9/12 下午5:01
+ */
+
+/* keywords-list */
+.keywords-list {
+    float: left;
+    width: 240px;
+    height: 350px;
+    padding: 10px 0;
+    margin-right: 10px;
+    background: #666;
+    color: #fff;
 }
+.keywords-list .keywords-item {
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+
+}
+.keywords-list .keywords-item .keyword-item-line {
+    padding: 0 4px;
+    font-size: 12px;
+}
+.keywords-list .keywords-item:hover {
+    background-color: #999;
+}
+.keywords-list .keywords-item .link {
+    color: #fff;
+}
+.keywords-list .keywords-item .link:hover {
+    color: #c60023;
+}
+
+/* banner-con */
+.banner-con {
+    width: 830px;
+    float: left;
+    height: 370px;
+    background-color: #eee;
+}
+.banner-con .loading {
+    margin-top: 150px;
+}
+
+
+/* floor */
+.floor-wrap {
+    margin-top: 20px;
+}
+.floor-wrap .floor-title-box {
+    position: relative;
+}
+.floor-wrap .floor-title{
+    height: 58px;
+    line-height: 58px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    padding-left: 20px;
+}
+.floor-wrap .floor-title.floor-blue {
+    background-image: -webkit-linear-gradient(90deg,#488bad,#337e8d);
+    background-image: -webkit-linear-gradient(left,#488bad,#337e8d);
+    background-image: -moz-linear-gradient(left,#488bad,#337e8d);
+    background-image: linear-gradient(90deg,#488bad,#337e8d);
+}
+
+.floor-wrap .floor-title.floor-grey {
+    background-image: -webkit-linear-gradient(90deg,#756059,#684c44);
+    background-image: -webkit-linear-gradient(left,#756059,#684c44);
+    background-image: -moz-linear-gradient(left,#756059,#684c44);
+    background-image: linear-gradient(90deg,#756059,#684c44);
+}
+
+.floor-wrap .floor-title.floor-green {
+    background-image: -webkit-linear-gradient(90deg,#5a7259,#425f41);
+    background-image: -webkit-linear-gradient(left,#5a7259,#425f41);
+    background-image: -moz-linear-gradient(left,#5a7259,#425f41);
+    background-image: linear-gradient(90deg,#5a7259,#425f41);
+}
+
+.floor-wrap .floor-title-code {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left:115px;
+    background: url('../../img/floor/pt_qrcode@1x.png');
+    vertical-align: middle;
+}
+.floor-wrap .floor-list {
+    margin-right: -20px;
+    overflow: hidden;
+}
+.floor-wrap .floor-item {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    margin: 15px 20px 15px 0;
+    float: left;
+    background: #fff;
+    cursor: pointer;
+}
+.floor-wrap .floor-item .floor-img {
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    -moz-transition: transform .4s ease,-moz-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+.floor-wrap .floor-item:hover .floor-img {
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    -moz-transition: transform .4s ease,-moz-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.floor-wrap .floor-item .floor-text {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #a56741;
+}
+.floor-wrap .floor-item .floor-img {
+    position: absolute;
+    right: 21px;
+    bottom: 10px;
+    width: 160px;
+    height: 165px;
+}
+
+
+
+
+
+
+
+
+
+

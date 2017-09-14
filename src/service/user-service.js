@@ -86,8 +86,8 @@ var _user = {
     // 获取用户信息
     getUserInfo : function(resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/user/get_information.do'),
-            method  : 'POST',
+            url     : _mm.getServerUrl('/user/get_user_info.do'),
+            method  : 'GET',
             success : resolve,
             error   : reject
         });
