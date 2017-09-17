@@ -13,11 +13,12 @@ var header = {
 	// 初始化
 	init : function(){
 		this.bindEvent();
+		this.onLoad();
 	},
 	// 页面加载时完成数据回显
 	onLoad : function(){
 		// 获取地址参数中的keyword值
-		var keyword = __mm.getUrlParam('keyword');
+		var keyword = _mm.getUrlParam('keyword');
 		//如果keyword存在，则回填搜索输入框
 		if(keyword){
 			$('#search-input').val(keyword);
@@ -54,4 +55,6 @@ var header = {
 	}
 };
 
-header.init();
+$(function(){
+	header.init();
+});

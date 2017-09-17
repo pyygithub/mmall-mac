@@ -1,0 +1,80 @@
+/**
+ * @Author:  pyy
+ * @Description: 商品列表样式
+ * @Date:   2017/9/15 上午11:22
+ * @Last Modified by:
+ * @Last Modified time:  2017/9/15 上午11:22
+ */
+
+/* 排序样式 */
+.sort-con {
+    overflow: hidden;
+}
+
+.sort-con .sort-item {
+    float: left;
+    position: relative;
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.sort-con .sort-item.active {
+    background: #C60023;
+    border:1px solid #C60023;
+    color: #fff;
+}
+
+.sort-con .sort-item.asc .fa-sort-desc {
+    opacity: .6;
+}
+
+.sort-con .sort-item.desc .fa-sort-asc {
+    opacity: .6;
+}
+
+.sort-con .sort-item .fa-sort-desc {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+/* list-con */
+
+.p-list-con {
+    margin-top: 15px;
+    margin-right: -20px;
+    overflow: hidden;
+}
+.p-list-con .p-item {
+    position: relative;
+    width: 180px;
+    float: left;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+    background: #fff;
+}
+.p-list-con .p-item .p-img {
+    width: 180px;
+    height: 200px;
+}
+.p-list-con .p-title-con {
+    width: 180px;
+    height: 36px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.p-list-con .p-title-con a{
+    color: #666;
+    text-decoration: none;
+}
+.p-list-con .p-price {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #e7389d;
+}

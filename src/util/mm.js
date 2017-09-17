@@ -9,7 +9,7 @@ var _mm = {
 		var _this = this;
 		$.ajax({
 			type			: param.method	|| 'get',
-			url			: param.url 	|| '',
+			url				: param.url 	|| '',
 			dataType		: param.type	|| 'json',
 			data			: param.data 	|| '',
 			success		: function(res){
@@ -52,7 +52,7 @@ var _mm = {
 		alert(msg || '操作成功！');
 	},
 	// 错误提示
-	successTips : function(msg){
+	errorTips : function(msg){
 		alert(msg || '系统错误！');
 	},
 	// 字段验证，支持是否非空判断、手机、邮箱

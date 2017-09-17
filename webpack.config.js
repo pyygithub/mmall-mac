@@ -81,12 +81,12 @@ var config = {
     },
     plugins: [
         // 压缩
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                //不显示警告
-                warnings: false
-            },
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         //不显示警告
+        //         warnings: false
+        //     },
+        // }),
         // 多个 html共用一个js文件(chunk)，可用CommonsChunkPlugin
         new webpack.optimize.CommonsChunkPlugin({
             //和上面entry中的名称一致，就会将对应js中的内容打包到base.js中,而不会生成common.bundle.js
