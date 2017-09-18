@@ -27,15 +27,16 @@ var getHtmlConfig = function (name, title) {
 
 var config = {
     entry: {
-        'common': ['./src/page/common/index.js'],
-        'index': ['./src/page/index/index.js'],
-        'list': ['./src/page/list/index.js'],
-        'user-login': ['./src/page/user-login/index.js'],
-        'user-register': ['./src/page/user-register/index.js'],
-        'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
-        'user-center': ['./src/page/user-center/index.js'],
+        'common'            : ['./src/page/common/index.js'],
+        'index'             : ['./src/page/index/index.js'],
+        'list'              : ['./src/page/list/index.js'],
+        'detail'            : ['./src/page/detail/index.js'],
+        'user-login'        : ['./src/page/user-login/index.js'],
+        'user-register'     : ['./src/page/user-register/index.js'],
+        'user-pass-reset'   : ['./src/page/user-pass-reset/index.js'],
+        'user-center'       : ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
-        'result': ['./src/page/result/index.js'],
+        'result'            : ['./src/page/result/index.js'],
     },
     output: {
         path: './dist',					// 用来存放打包后文件的输出目录
@@ -72,11 +73,11 @@ var config = {
     },
     resolve: {
         alias: {
-            node_modules: __dirname + '/node_modules',
-            util: __dirname + '/src/util',
-            page: __dirname + '/src/page',
-            service: __dirname + '/src/service',
-            img: __dirname + '/src/img',
+            node_modules    : __dirname + '/node_modules',
+            util            : __dirname + '/src/util',
+            page            : __dirname + '/src/page',
+            service         : __dirname + '/src/service',
+            img             : __dirname + '/src/img',
         }
     },
     plugins: [
@@ -98,6 +99,7 @@ var config = {
         //html模板处理
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
         new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表页')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail', '商品详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '找回密码')),

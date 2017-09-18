@@ -18,17 +18,6 @@ var _product = {
             error   : reject
         });
     },
-    // 获取商品详情
-    getProductDetail : function(productId, resolve, reject){
-        _mm.request({
-            url     : _mm.getServerUrl('/product/detail.do'),
-            data    : {
-                productId : productId
-            },
-            success : resolve,
-            error   : reject
-        });
-    },
 
 }
 module.exports = _product;

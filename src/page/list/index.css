@@ -78,3 +78,14 @@
     font-size: 16px;
     color: #e7389d;
 }
+
+/* 错误信息 */
+.err-tip {
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #f60;
+    text-align: center;
+    background: #eee;
+}

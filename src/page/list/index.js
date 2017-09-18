@@ -93,7 +93,7 @@ var page = {
                     pages           : res.pages,
                 });
         },function(errMsg){
-            _mm.errorTips(errMsg);
+            $('.p-list-con').html('<p class="err-tip">很抱歉，实在找不到您要的商品</p>');
         });
     },
     // 加载分页信息
