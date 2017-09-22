@@ -27,7 +27,7 @@ var _user = {
                 type    : 'username',
                 value     : username
             },
-            method  : 'GET',
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -46,7 +46,7 @@ var _user = {
     checkLogin : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/get_user_info.do'),
-            method  : 'GET',
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -58,7 +58,7 @@ var _user = {
             data    : {
                 username : username
             },
-            method  : 'GET',
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -87,7 +87,7 @@ var _user = {
     getUserInfo : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/get_user_info.do'),
-            method  : 'GET',
+            method  : 'POST',
             success : resolve,
             error   : reject
         });

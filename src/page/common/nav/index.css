@@ -29,3 +29,6 @@
 	display: inline-block;
 	margin-left:5px;
 }
+.nav .nav-list .nav-item .cart-count {
+	color: #C60023;
+}
